@@ -21,19 +21,29 @@ public class Book {
         return author;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        Book book = (Book) o;
-        if (title.equals(book.getTitle())){
-            return true;
-        }
-        return false;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        Book book = (Book) o;
+//        if (title.equals(book.getTitle())) {
+//            return true;
+//        }
+//        return false;
+//    }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(title);
     }
+
     public String toString() {
         return "Book{" + "title=" + title + ", author=" + author + '}';
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Book book = (Book) obj;
+        return Objects.equals(title, book.title) &&
+                Objects.equals(author, book.author);
     }
 }

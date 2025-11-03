@@ -1,14 +1,16 @@
 package Class6;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ListLesson {
     public static void main(String[] args) {
 //        task1();
 //        task2();
         task3();
-
+        task8();
     }
 
     public static void task1() {
@@ -52,7 +54,8 @@ public class ListLesson {
         System.out.println("Новый список покупок: ");
         printList(shoppingList);
     }
-    public static void task3(){
+
+    public static void task3() {
 //        3. Условие: Создай класс Book с полями:
 //•	String title
 //•	String author
@@ -72,13 +75,26 @@ public class ListLesson {
         for (Book book : books) {
             System.out.println(book);
         }
-
-
     }
-    private static void printList(List <String> purchases){
-        for (String purch: purchases) {
+
+    private static void printList(List<String> purchases) {
+        for (String purch : purchases) {
             System.out.println(purch);
         }
     }
 
+    public static void task8() {
+        Set<Book> bookSet = new HashSet<>();
+
+        bookSet.add(new Book("Книга1", "Автор1"));
+        bookSet.add(new Book("Книга2", "Автор2"));
+        bookSet.add(new Book("Книга3", "Автор3"));
+        bookSet.add(new Book("Книга4", "Автор4"));
+        bookSet.add(new Book("Книга2", "Автор2"));
+
+        System.out.println("Содержимое множества:");
+        for (Book book : bookSet) {
+            System.out.println(book);
+        }
+    }
 }
