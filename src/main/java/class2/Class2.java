@@ -1,8 +1,8 @@
-package org.example;
+package class2;
 
 import java.util.Scanner;
 
-public class Main {
+public class Class2 {
     public static void main(String[] args) {
 ////        1. Дано уравнение: (10+12)*x=88;. Найти значение x
 //        int x;
@@ -11,16 +11,16 @@ public class Main {
 //        System.out.println("****************************************");
 ////        Введите x,y,z. К числу x прибавьте y, число y умножьте на z. Используйте операции присваивания.
 ////        Результат выведите в косноль
-//        Scanner in=new Scanner (System.in);
+//        Scanner in = new Scanner(System.in);
 //        System.out.println("Введите x");
-//        int x1=in.nextInt();
-//        System.out.println ("Введите у");
-//        int y=in.nextInt();
+//        int x1 = in.nextInt();
+//        System.out.println("Введите у");
+//        int y = in.nextInt();
 //        System.out.println("Введите z");
-//        int z =in.nextInt();
-//        x1+=y;
-//        y*=z;
-//        System.out.println(x1 + " "+y);
+//        int z = in.nextInt();
+//        x1 += y;
+//        y *= z;
+//        System.out.println(x1 + " " + y);
 //        System.out.println("****************************************");
 //        //5. Дано уравнение 213/x+258/x+60=217
 //        int sum1 = 213 + 258;
@@ -69,5 +69,6 @@ public class Main {
 //            System.out.println("Число" + a + "делится на 3");
 //        } else {
 //            System.out.println("Число" + a + "НЕ делится на 3");
+//        }
     }
-    }
+}
